@@ -309,6 +309,9 @@ define('composer', [
 
 		submitBtn.on('click', function() {
 			$(this).attr('disabled', true);
+			setTimeout( function(){
+				location.reload();
+			}, 0);
 			post(post_uuid);
 		});
 
