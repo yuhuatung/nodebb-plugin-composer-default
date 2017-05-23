@@ -606,7 +606,6 @@ define('composer', [
 			} else {
 				removeComposerHistory();
 			}
-			location.reload();
 			$(window).trigger('action:composer.' + action, { composerData: composerData, data: data });
 		});
 	}
